@@ -95,7 +95,7 @@ formal-language-sqli-detection/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/formal-language-sqli-detection.git
+git clone https://github.com/keshoreg06-beep/formal-language-sqli-detection.git
 cd formal-language-sqli-detection
 ```
 
@@ -212,9 +212,17 @@ The full IEEE-format conference paper is available in `paper/conference_paper.do
 
 ## 👨‍💻 Author
 
-**[Your Name]**  
+**[Keshore G]**  
 Department of Computer Science and Engineering  
-Vellore Institute of Technology, Vellore, India  
+Vellore Institute of Technology, Vellore, India 
+
+**[Sanhit]**  
+Department of Computer Science and Engineering  
+Vellore Institute of Technology, Vellore, India 
+
+**[Nitesh]**  
+Department of Computer Science and Engineering  
+Vellore Institute of Technology, Vellore, India 
 
 ---
 
