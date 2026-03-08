@@ -1,0 +1,95 @@
+# ============================================================
+# .gitignore for Formal Language-Based SQLi Detection Project
+# ============================================================
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual Environments ─────────────────────────────────────
+venv/
+env/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Jupyter Notebooks ────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Distribution / Packaging ─────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+wheels/
+pip-wheel-metadata/
+
+# ── Testing ──────────────────────────────────────────────────
+.pytest_cache/
+.tox/
+htmlcov/
+.coverage
+*.cover
+coverage.xml
+
+# ── IDEs & Editors ───────────────────────────────────────────
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Spyder
+.spyderproject.cfg
+.spyproject
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ── OS Files ─────────────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ── ML / Data Science ────────────────────────────────────────
+# Saved models (large files)
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+
+# Temporary output files
+*.log
+*.tmp
+
+# ── Keep These (do NOT ignore) ───────────────────────────────
+# dataset/sqli_dataset.csv       → KEEP (small, needed for demo)
+# results/*.png                  → KEEP (figures for README)
+# paper/conference_paper.docx    → KEEP (submission document)
+# code/sqli_detection.py         → KEEP (main implementation)
+# requirements.txt               → KEEP
+# README.md                      → KEEP
