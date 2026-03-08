@@ -95,7 +95,7 @@ formal-language-sqli-detection/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/formal-language-sqli-detection.git
+git clone https://github.com/keshoreg06-beep/formal-language-sqli-detection.git
 cd formal-language-sqli-detection
 ```
 
