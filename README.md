@@ -212,9 +212,17 @@ The full IEEE-format conference paper is available in `paper/conference_paper.do
 
 ## 👨‍💻 Author
 
-**[Your Name]**  
+**[Keshore G]**  
 Department of Computer Science and Engineering  
-Vellore Institute of Technology, Vellore, India  
+Vellore Institute of Technology, Vellore, India 
+
+**[Sanhit]**  
+Department of Computer Science and Engineering  
+Vellore Institute of Technology, Vellore, India 
+
+**[Nitesh]**  
+Department of Computer Science and Engineering  
+Vellore Institute of Technology, Vellore, India 
 
 ---
 
